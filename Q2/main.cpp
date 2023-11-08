@@ -19,9 +19,9 @@ using namespace std;
 int main()
 {
 	//Container from Q1
-	map< pair<string, string>, pair<int, string> > flights;
-	flights.insert (make_pair ( make_pair("SCE", "PHL"), make_pair(160, "miles" )));
-	flights.insert (make_pair ( make_pair("SCE", "ORD"), make_pair(640, "miles" )));
-	flights.insert (make_pair ( make_pair("SCE", "EWR"), make_pair(220, "miles" )));
+	map< pair<string, string>, int > flights;
+	flights[make_pair("SCE", "PHL")] = 160;
+	flights[make_pair("SCE", "ORD")] = 640;
+	flights[make_pair("SCE", "EWR")] = 220;
 
 }

@@ -11,7 +11,7 @@ class Plane
 public:
 
 //Constructor that takes in two strings "from" and "to" as input arguments
-	Plane(string from, string to);
+	Plane(const string from, const string to);
 
 //Virtual deconstructor
 	virtual ~Plane();
@@ -59,7 +59,7 @@ private:
 	string destination;
 
 //Container from Question 1
-	map< pair<string, string>, pair<int, string> > flights;
+	map< pair<string, string>, int> flights;
 
 protected:
 
