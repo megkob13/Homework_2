@@ -1,0 +1,3 @@
+C:/Users/megko/source/repos/Homework_2/FULLHOMEWORK_ALLQUESTIONS/build/CMakeFiles/Homework2.dir
+C:/Users/megko/source/repos/Homework_2/FULLHOMEWORK_ALLQUESTIONS/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/megko/source/repos/Homework_2/FULLHOMEWORK_ALLQUESTIONS/build/CMakeFiles/ZERO_CHECK.dir

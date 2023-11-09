@@ -6,6 +6,8 @@
 #include <vector>
 #include <random>
 
+using namespace std;
+
 
 //QUESTION 2 (creating class)
 class Plane
@@ -13,7 +15,7 @@ class Plane
 public:
 
 	//Constructor that takes in two strings "from" and "to" as input arguments
-	Plane(string from, string to);
+	Plane(const string& from, const string& to);
 
 	//Virtual deconstructor
 	virtual ~Plane();
@@ -22,12 +24,12 @@ public:
 	void operate(double dt);
 
 	//Get functions
-	double getpos();
-	double getvel();
-	double getloiter_time();
-	string getorigin();
-	string getdestination();
-	bool getat_SCE();
+	double getpos() const;
+	double getvel() const;
+	double getloiter_time() const;
+	string getorigin() const;
+	string getdestination() const;
+	bool getat_SCE() const;
 
 	//Set functions
 	void setvel(double x);
@@ -61,7 +63,7 @@ private:
 	string destination;
 
 	//Container from Question 1
-	map< pair<string, string>, int > flights;
+	map< string, map<string,int> > flights;
 
 protected:
 
@@ -76,7 +78,7 @@ class Airliner : public Plane
 public:
 
 	//Constructor that takes in three strings as input arguments
-	Airliner(string Airline, string from, string to);
+	Airliner(const string& Airline, const string& from, const string& to);
 
 	//Empty deconstructor
 	virtual ~Airliner();
@@ -99,12 +101,47 @@ class GeneralAviation :public Plane
 public:
 
 	//Constructor that takes in two strings as input arguments
-	GeneralAviation(string from, string to);
+	GeneralAviation( const string& from, const string& to);
 
 	//Empty deconstructor
-	virtual ~GeneralAviation();
+	~GeneralAviation();
 
 	//Overridden function "time_on_ground" that returns "wait_time"
 	virtual double time_on_ground() override;
+
+};
+
+
+//QUESTION 6 (create class ATC)
+class ATC
+{
+public:
+
+	//Empty constructor
+	ATC();
+
+	//Empty deconstructor
+	~ATC();
+
+	//Function "register_plane" that takes in airplane object to store in container
+	void register_plane(Plane* aircraft);
+
+	//Function "control_traffic" that contains flowchart
+	void control_traffic();
+
+	//Get function for registered planes to use in while(true) loop
+	vector<Plane*> getregistered_planes()
+	{
+		return registered_planes;
+	};
+
+private:
+
+	//Container to store plane objects
+	vector <Plane*> registered_planes;
+
+	//Positive integers
+	const int MAX_LANDED_PLANE_NUM = 2;
+	const int AIRSPACE_DISTANCE = 50;
 
 };

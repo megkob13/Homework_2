@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\HW2_Visualizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\hw2classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\HW2_Visualizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{708AE6C9-DE60-3A27-AF2D-1E76EA164FEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6747F58E-2284-3ACD-A711-63E2C96466CB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
