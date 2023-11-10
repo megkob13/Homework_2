@@ -1,3 +1,4 @@
 ﻿  main.cpp
 C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\main.cpp(195,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+SDL2maind.lib(SDL_windows_main.obj) : warning LNK4099: PDB '' was not found with 'SDL2maind.lib(SDL_windows_main.obj)' or at ''; linking object as if no debug info
   Homework2.vcxproj -> C:\Users\megko\source\repos\Homework_2\FULLHOMEWORK_ALLQUESTIONS\build\bin\Homework2.exe

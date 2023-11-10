@@ -217,9 +217,9 @@ void ATC::control_traffic()
 
 
 
-int main( int argc, char** argv)
+int main( int argc, char** arg ) //COMMENT OUT TO RUN Q5
 {
-	HW2_VIZ viz;
+	HW2_VIZ viz; //COMMENT OUT TO RUN Q5
 
 	//QUESTION 1 (create container)
 	
@@ -281,10 +281,10 @@ int main( int argc, char** argv)
 
 			//QUESTION 8 (comment out all cout and add visualize)
 			
-			//cout << "Time: " << time << " seconds" << endl;
-			//cout << "Position of " << aircraft->plane_type() << " between " << aircraft->getorigin() << " and " << aircraft->getdestination() << ":" << endl;
-			//cout << aircraft->getpos() << " miles" << endl;
-			//cout << endl;
+			cout << "Time: " << time << " seconds" << endl;
+			cout << "Position of " << aircraft->plane_type() << " between " << aircraft->getorigin() << " and " << aircraft->getdestination() << ":" << endl;
+			cout << aircraft->getpos() << " miles" << endl;
+			cout << endl;
 
 			viz.visualize_plane(aircraft->plane_type(), aircraft->getorigin(), aircraft->getdestination(), aircraft->getpos());
 
